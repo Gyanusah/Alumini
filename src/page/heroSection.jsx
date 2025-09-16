@@ -11,7 +11,7 @@ export default function HeroSection() {
         </div>
         <div className="absolute inset-0 z-0">
           
-          alt="University Campus" className="w-full h-full object-cover"
+         
           <div className="absolute inset-0 bg-hero-gradient opacity-85"></div>
         </div>
 
