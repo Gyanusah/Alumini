@@ -97,12 +97,12 @@ export default function Header() {
           <img
             src="https://s3.amazonaws.com/cdn.designcrowd.com/blog/30-Alumni-Logos-to-Make-an-Authoritative-Network/logo-design-by-sbelogd-designcrowd.png"
             alt="Alumni Connect Logo"
-            className="w-20 h-20"
+            className="w-25 h-25"
           />
-          <div>
+          {/* <div>
             <h1 className="text-xl font-bold">Alumni Connect</h1>
-        
-          </div>
+            <p className="text-sm text-gray-500">Excellence Through Unity</p>
+          </div> */}
         </div>
 
         {/* Hamburger Button (Visible on Small Screens) */}
@@ -149,7 +149,7 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Mobile Menu (with proper height animation) */}
+      {/* Mobile Navigation Menu (Collapsible) */}
       <div
         className={`md:hidden overflow-hidden transition-all duration-300 ${
           menuOpen ? "max-h-[500px]" : "max-h-0"
@@ -199,11 +199,13 @@ export default function Header() {
           <button className="flex items-center bg-gray-100 rounded px-3 py-1 hover:bg-gray-200 mt-4">
             <FaSearch className="mr-1" /> Search
           </button>
-          <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
-            Sign In
-          </button>
         </nav>
       </div>
+
+      {/* Fixed Sign In Button (Always visible on Mobile) */}
+      <button className="fixed bottom-4 right-4 md:hidden bg-blue-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-700 z-50">
+        Sign In
+      </button>
     </header>
   );
 }
