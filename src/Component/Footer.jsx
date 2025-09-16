@@ -1,6 +1,23 @@
 import React from "react";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaLinkedinIn,
+  FaInstagram,
+  FaYoutube,
+} from "react-icons/fa";
+
 
 export default function AlumniFooter() {
+
+  const socialIcons = {
+    facebook: <FaFacebookF />,
+    twitter: <FaTwitter />,
+    linkedin: <FaLinkedinIn />,
+    instagram: <FaInstagram />,
+    youtube: <FaYoutube />,
+  };
+
   return (
     <footer className="bg-[#05253f] text-white">
       {/* Newsletter Section */}
@@ -167,6 +184,8 @@ export default function AlumniFooter() {
       <div className="border-t border-white/10 px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-4 text-gray-400 text-sm">
         <div className="flex items-center gap-3">
           <span>Follow us:</span>
+
+        
           {["facebook", "twitter", "linkedin", "instagram", "youtube"].map(
             (social) => (
               <a
@@ -175,14 +194,11 @@ export default function AlumniFooter() {
                 className="p-2 bg-white/5 rounded-md hover:bg-white/10 transition"
               >
                 <span className="sr-only">{social}</span>
-                {/* Placeholder for social icon */}
-                <svg
-                  className="w-4 h-4"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <circle cx="12" cy="12" r="10" />
-                </svg>
+
+
+                {React.cloneElement(socialIcons[social], {
+                  className: "w-4 h-4",
+                })}
               </a>
             )
           )}
