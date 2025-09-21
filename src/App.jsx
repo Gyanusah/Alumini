@@ -8,7 +8,9 @@ import AlumniDirectory from "./page/AlumniDirectory";
 
 import SupportSection from "./page/Donatioin/Donation";
 import NewsUpdates from "./Component/News/NewsUpdates";
+//import EventsCard from "./page/EventsCard";
 import EventsCard from "./page/EventsCard";
+
 import SignUp from "./Component/Signup";
 import AllNews from "./Component/News/AllNews";
 import Register from "./page/Community/Register";
