@@ -25,7 +25,6 @@ export default function App() {
     <div>
       <BrowserRouter>
         <Header />
-
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/directory" element={<AlumniDirectory />} />
