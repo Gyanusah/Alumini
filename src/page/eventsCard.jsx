@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const eventCards = [
   {
@@ -28,6 +29,12 @@ const eventCards = [
 ];
 
 export default function EventsCards() {
+  const navigate = useNavigate();
+  const AllEvents = (e) => {
+    e.preventDefault();
+    navigate("/AllEvents");
+   
+  };
   return (
     <section className="py-12 px-6 bg-gray-50 text-center">
       <div className="max-w-6xl mx-auto space-y-10">
@@ -75,7 +82,7 @@ export default function EventsCards() {
           ))}
         </div>
 
-        <button className="mt-8 bg-yellow-400 text-blue-900 font-semibold px-6 py-2 rounded hover:bg-yellow-300">
+        <button className="mt-8 bg-yellow-400 text-blue-900 font-semibold px-6 py-2 rounded hover:bg-yellow-300" onClick={AllEvents}>
           View All Events 📅
         </button>
       </div>

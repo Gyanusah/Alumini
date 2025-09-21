@@ -1,25 +1,27 @@
+import React from "react";
+import HeroSection from "../page/heroSection";
 
-import React from 'react'
-import HeroSection from '../page/heroSection';
-import AlumniDirectory from '../page/alumniDirecroty';
-import UpcomingEvents from '../page/upCommingEvents';
-import EventsCards from '../page/eventsCard';
-import NewsUpdates from '../page/newsUpdates';
-import AlumniNews from '../page/news';
-import WaysToGive from '../page/wayToGive';
-import SupportSection from '../page/Donation';
+import AlumniDirectory from "../page/AlumniDirecroty";
+
+import UpComingEvents from "../page/UpComingEvents";
+
+import EventsCard from "../page/EventsCard";
+import NewsUpdates from "./News/NewsUpdates";
+import AlumniNews from "./News/News";
+import WaysToGive from "../page/WayToGive";
+import SupportSection from "../page/Donatioin/Donation";
 
 export default function Home() {
   return (
     <div>
       <HeroSection />
-       <AlumniDirectory/>
-       <UpcomingEvents />
-       <EventsCards/>
-       <NewsUpdates />
-       <AlumniNews />
-       <SupportSection />
-       <WaysToGive />
+      <AlumniDirectory />
+      <UpComingEvents />
+      <EventsCard />
+      <NewsUpdates />
+      <AlumniNews />
+      <SupportSection />
+      <WaysToGive />
     </div>
   );
 }

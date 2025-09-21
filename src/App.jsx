@@ -3,24 +3,37 @@ import "./index.css";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Home from "./Component/Home";
 import Header from "./Component/Header";
-import AlumniFooter from "./Component/Footer";
-import AlumniDirectory from "./page/alumniDirecroty";
-import SupportSection from "./page/Donation";
-import NewsUpdates from "./page/newsUpdates";
-import EventsCards from "./page/eventsCard";
+import AlumniDirectory from "./page/AlumniDirecroty";
+import SupportSection from "./page/Donatioin/Donation";
+import NewsUpdates from "./Component/News/NewsUpdates";
+import EventsCards from "./page/EventsCard";
+import SignUp from "./Component/Signup";
+import AllNews from "./Component/News/AllNews";
+import Register from "./page/Community/Register";
+import DonationForm from "./page/Donatioin/DonationForm";
+import AlumniFooter from "./Component/Footer"
+
+
+
 
 export default function App() {
   return (
     <div>
       <BrowserRouter>
         <Header />
+
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Directory" element={<AlumniDirectory />} />
-          <Route path="/Events" element={<EventsCards />} />
-          <Route path="/Donate" element={<SupportSection />} />
-          <Route path="/News" element={<NewsUpdates />} />
+          <Route path="/directory" element={<AlumniDirectory />} />
+          <Route path="/events" element={<EventsCards />} />
+          <Route path="/donate" element={<SupportSection />} />
+          <Route path="/news" element={<NewsUpdates />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/allnews" element={<AllNews />} />
+          <Route path="/donationform" element={<DonationForm />} />
+          <Route path="/register" element={<Register />} />c{" "}
         </Routes>
+        {/* <Login/> */}
         <AlumniFooter />
       </BrowserRouter>
     </div>

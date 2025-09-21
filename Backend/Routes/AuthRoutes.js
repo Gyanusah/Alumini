@@ -1,22 +1,10 @@
-// const { signup } = require('../Controllers/authController')
-// const {signupValidation}=require('../Middlewares/authMiddlewares')
-
-// const express = require('express');
-// const router = express.Router();
-
-// router.post('/login',(req,res)=>{
-// res.send('login sucessfully')
-// })
-
-// router.post('/signup', signupValidation,signup)
-// module.exports =router
 
 
 const express = require('express');
 const router = express.Router();
 
-const { signup } = require('../Controllers/authController');
-const { signupValidation } = require('../Middlewares/authMiddlewares');
+
+const { signupValidation,SignUp, Login, loginValidation } = require('../Middlewares/authMiddlewares');
 
 // Dummy login route (for now)
 router.post('/login', (req, res) => {
@@ -24,6 +12,8 @@ router.post('/login', (req, res) => {
 });
 
 // Signup route with validation middleware and controller
-router.post('/signup', signupValidation, signup);
+router.post('/signup', signupValidation, SignUp);
+//router.post('/Login', loginValidation , Login)
 
 module.exports = router;
+

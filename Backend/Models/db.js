@@ -20,8 +20,8 @@ require('dotenv').config();  // Ensure .env is loaded
 const mongo_url = process.env.MONGO_CONN;
 
 mongoose.connect(mongo_url, {  // ← use the variable, not string literal
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
+    // useNewUrlParser: true,
+    // useUnifiedTopology: true,
 })
     .then(() => {
         console.log("mongoDB connected...");

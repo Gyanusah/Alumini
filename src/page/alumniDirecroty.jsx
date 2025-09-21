@@ -43,6 +43,10 @@ const alumniData = [
   },
 ];
 
+const newAlumni=()=>{
+  alert("no more alumni")
+}
+
 export default function AlumniDirectory() {
     
   return (
@@ -63,7 +67,7 @@ export default function AlumniDirectory() {
           className="px-4 py-2 rounded-l-lg border w-96"
         />
         <button className="bg-blue-600 text-white px-4 rounded-r-lg">
-          Filter
+          Search
         </button>
       </div>
 
@@ -106,7 +110,7 @@ export default function AlumniDirectory() {
         ))}
       </div>
 
-      <button className="mt-10 bg-yellow-400 text-blue-900 font-semibold px-6 py-3 rounded hover:bg-yellow-300">
+      <button className="mt-10 bg-yellow-400 text-blue-900 font-semibold px-6 py-3 rounded hover:bg-yellow-300" onClick={newAlumni}>
         Load More Alumni
       </button>
     </section>
