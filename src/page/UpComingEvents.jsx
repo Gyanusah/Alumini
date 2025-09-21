@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const events = [
   {
@@ -14,18 +15,18 @@ const events = [
     imageUrl:
       "https://images.occasiongenius.com/uploads/r/8/a/r8a7op7cvn/2022/09/06/20220906181720-8cce3612.jpg",
   },
-    // {
-    //   type: "Networking",
-    //   tag: "Special Event",
-    //   title: "Professional Networking Meet 2024",
-    //   description:
-    //     "An opportunity to network, learn, and share experiences with fellow professionals.",
-    //   date: "October 10, 2024",
-    //   time: "5:00 PM - 8:00 PM",
-    //   location: "City Convention Center",
-    //   attendance: "300 / 400 attending",
-    //   imageUrl: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=200&fit=crop",
-    // },
+  // {
+  //   type: "Networking",
+  //   tag: "Special Event",
+  //   title: "Professional Networking Meet 2024",
+  //   description:
+  //     "An opportunity to network, learn, and share experiences with fellow professionals.",
+  //   date: "October 10, 2024",
+  //   time: "5:00 PM - 8:00 PM",
+  //   location: "City Convention Center",
+  //   attendance: "300 / 400 attending",
+  //   imageUrl: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=200&fit=crop",
+  // },
   //   {
   //     type: "Meetup",
   //     tag: "Casual Event",
@@ -40,7 +41,14 @@ const events = [
   //   },
 ];
 
-export default function UpcomingEvents() {
+export default function UpComingEvents() {
+  const navigate = useNavigate();
+  const newRegister = (e) => {
+    e.preventDefault();
+    navigate("/signup");
+   
+  };
+
   return (
     <section className="py-16 px-6 bg-gray-50 text-center">
       <h2 className="text-3xl font-bold mb-4 text-blue-900">Upcoming Events</h2>
@@ -86,7 +94,10 @@ export default function UpcomingEvents() {
               </div>
 
               <div className="flex gap-4">
-                <button className="bg-yellow-400 text-blue-900 font-semibold px-4 py-2 rounded hover:bg-yellow-300">
+                <button
+                  className="bg-yellow-400 text-blue-900 font-semibold px-4 py-2 rounded hover:bg-yellow-300"
+                  onClick={newRegister}
+                >
                   Register Now →
                 </button>
                 <button className="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300">

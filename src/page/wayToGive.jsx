@@ -1,5 +1,6 @@
 import React from "react";
 import { Heart } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export default function WaysToGive() {
   const givingTiers = [
@@ -43,6 +44,13 @@ export default function WaysToGive() {
     },
   ];
 
+  const navigate = useNavigate();
+    const Donation = (e) => {
+      e.preventDefault();
+      navigate("/alldonation");
+ 
+    };
+
   return (
     <section className="bg-gray-50 py-16">
       <h2 className="text-3xl font-bold text-center text-gray-900 mb-10">
@@ -85,7 +93,7 @@ export default function WaysToGive() {
           matter the size, contributes to our shared mission of excellence.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <button className="bg-yellow-400 text-[#05253f] font-semibold px-6 py-3 rounded-md flex items-center justify-center gap-2 hover:opacity-90 transition">
+          <button className="bg-yellow-400 text-[#05253f] font-semibold px-6 py-3 rounded-md flex items-center justify-center gap-2 hover:opacity-90 transition"onClick={Donation} >
             <Heart size={16} /> Make a Donation
           </button>
           <button className="border border-yellow-400 text-yellow-400 font-semibold px-6 py-3 rounded-md hover:bg-yellow-50/10 transition">
