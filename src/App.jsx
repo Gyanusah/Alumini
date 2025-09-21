@@ -8,7 +8,7 @@ import AlumniDirectory from "./page/AlumniDirectory";
 
 import SupportSection from "./page/Donatioin/Donation";
 import NewsUpdates from "./Component/News/NewsUpdates";
-import EventsCards from "./page/EventsCard";
+import EventsCard from "./page/EventsCard";
 import SignUp from "./Component/Signup";
 import AllNews from "./Component/News/AllNews";
 import Register from "./page/Community/Register";
@@ -27,7 +27,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/directory" element={<AlumniDirectory />} />
-          <Route path="/events" element={<EventsCards />} />
+          <Route path="/events" element={<EventsCard />} />
           <Route path="/donate" element={<SupportSection />} />
           <Route path="/news" element={<NewsUpdates />} />
           <Route path="/signup" element={<SignUp />} />

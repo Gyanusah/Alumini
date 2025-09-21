@@ -28,7 +28,7 @@ const eventCards = [
   },
 ];
 
-export default function EventsCards() {
+export default function EventsCard() {
   const navigate = useNavigate();
   const AllEvents = (e) => {
     e.preventDefault();
