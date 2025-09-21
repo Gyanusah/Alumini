@@ -1,7 +1,7 @@
 import React from "react";
 import HeroSection from "../page/heroSection";
 
-import AlumniDirectory from "../page/AlumniDirecroty";
+import AlumniDirectory from "../page/AlumniDirectory";
 
 import UpComingEvents from "../page/UpComingEvents";
 

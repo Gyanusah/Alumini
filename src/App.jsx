@@ -3,7 +3,9 @@ import "./index.css";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Home from "./Component/Home";
 import Header from "./Component/Header";
-import AlumniDirectory from "./page/AlumniDirecroty";
+// import AlumniDirectory from "./page/AlumniDirecroty";
+import AlumniDirectory from "./page/AlumniDirectory";
+
 import SupportSection from "./page/Donatioin/Donation";
 import NewsUpdates from "./Component/News/NewsUpdates";
 import EventsCards from "./page/EventsCard";
