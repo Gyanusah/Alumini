@@ -1,8 +1,7 @@
 import React from "react";
-import HeroSection from "../Screen/heroSection";
 
 import AlumniDirectory from "../Screen/AlumniDirectory";
-
+import HeroSection from "../Screen/HeroSection";
 import EventsCard from "../Screen/EventsCard";
 import NewsUpdates from "./News/NewsUpdates";
 import AlumniNews from "./News/News";
