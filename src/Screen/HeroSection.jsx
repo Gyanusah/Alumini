@@ -36,7 +36,7 @@ export default function HeroSection() {
       modules={[Navigation, Pagination, Autoplay]}
       navigation
       pagination={{ clickable: true }}
-      autoplay={{ delay: 5000 }}
+      autoplay={{ delay: 4000 }}
       loop
       className="h-[70vh] md:h-[50vh] lg:h-[60vh]"
     >
