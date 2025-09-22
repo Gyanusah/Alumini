@@ -46,14 +46,14 @@ import "./index.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Component/Home";
 import Header from "./Component/Header";
-import AlumniDirectory from "./Screens/AlumniDirectory";
-import SupportSection from "./Screens/Donatioin/Donation";
+import AlumniDirectory from "./Screen/AlumniDirectory";
+import SupportSection from "./Screen/Donatioin/Donation";
 import NewsUpdates from "./Component/News/NewsUpdates";
-import EventsCard from "./Screens/EventsCard";
+import EventsCard from "./Screen/EventsCard";
 import SignUp from "./Component/Signup";
 import AllNews from "./Component/News/AllNews";
-import Register from "./Screens/Community/Register";
-import DonationForm from "./Screens/Donatioin/DonationForm";
+import Register from "./Screen/Community/Register";
+import DonationForm from "./Screen/Donatioin/DonationForm";
 import AlumniFooter from "./Component/Footer";
 
 export default function App() {
