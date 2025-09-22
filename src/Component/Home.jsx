@@ -1,15 +1,14 @@
 import React from "react";
-import HeroSection from "../Pages/heroSection";
+import HeroSection from "../Screens/heroSection";
 
-import AlumniDirectory from "../Pages/AlumniDirectory";
+import AlumniDirectory from "../Screens/AlumniDirectory";
 
-import UpComingEvents from "../Pages/UpComingEvents";
-
-import EventsCard from "../Pages/EventsCard";
+import EventsCard from "../Screens/EventsCard";
 import NewsUpdates from "./News/NewsUpdates";
 import AlumniNews from "./News/News";
-import WaysToGive from "../Pages/WayToGive";
-import SupportSection from "../Pages/Donatioin/Donation";
+import WaysToGive from "../Screens/WayToGive";
+import SupportSection from "../Screens/Donatioin/Donation";
+import UpComingEvents from "../Screens/UpComingEvents";
 
 export default function Home() {
   return (
