@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -22,23 +21,22 @@ const events = [
 ];
 
 export default function HeroSection() {
-const navigate = useNavigate();
-    const Donation = (e) => {
-      e.preventDefault();
-      navigate("/donationform");
- 
-    };
-    const join = (e) => {
-      e.preventDefault();
-      navigate("/register");
-    }
- 
+  const navigate = useNavigate();
+  const Donation = (e) => {
+    e.preventDefault();
+    navigate("/donationform");
+  };
+  const join = (e) => {
+    e.preventDefault();
+    navigate("/register");
+  };
+
   return (
     <Swiper
       modules={[Navigation, Pagination, Autoplay]}
       navigation
       pagination={{ clickable: true }}
-      autoplay={{ delay: 8000 }}
+      autoplay={{ delay: 5000 }}
       loop
       className="h-[70vh] md:h-[50vh] lg:h-[60vh]"
     >
@@ -58,7 +56,10 @@ const navigate = useNavigate();
             flourish.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-3 md:gap-4 mb-4 md:mb-10">
-            <button className="bg-yellow-400 text-blue-900 font-semibold px-5 py-2 sm:px-6 sm:py-3 rounded hover:bg-yellow-300 transition" onClick={join}>
+            <button
+              className="bg-yellow-400 text-blue-900 font-semibold px-5 py-2 sm:px-6 sm:py-3 rounded hover:bg-yellow-300 transition"
+              onClick={join}
+            >
               Join Our Community →
             </button>
             <button className="border border-yellow-400 text-yellow-400 font-semibold px-5 py-2 sm:px-6 sm:py-3 rounded hover:bg-yellow-400 hover:text-blue-900 transition">
@@ -122,7 +123,10 @@ const navigate = useNavigate();
             Help us create scholarships, build facilities, and support student
             initiatives. Every contribution makes a lasting impact.
           </p>
-          <button className="bg-blue-900 text-white px-5 sm:px-6 py-2 sm:py-3 rounded-lg hover:bg-blue-700 transition" onClick={Donation}>
+          <button
+            className="bg-blue-900 text-white px-5 sm:px-6 py-2 sm:py-3 rounded-lg hover:bg-blue-700 transition"
+            onClick={Donation}
+          >
             Donate Now 💙
           </button>
         </div>
